@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELIS</title>
+</head>
+<body>
+    <h1>Pelis de Star Wars</h1>
+        <!--Lista de las películas de SW-->
+        <ul>
+            {% for titles in data %}
+                <li>{{titles}}</li>
+            {% endfor %}
+        </ul>
+        <p>
+            <a href="{{ url_for('index') }}">Volver al índice</a>
+        </p>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR WARS</title>
+</head>
+<body>
+    <h1>STAR WARS</h1>
+        <!--Links a las diferentes rutas-->
+        <ul>
+            <li style="margin-bottom: 20px;">
+                <a href="{{ url_for('people_name') }}">Todos los personajes de Star Wars</a>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <a href="{{ url_for('films_title') }}">Pelis de Star Wars por orden de estreno</a>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <a href="{{ url_for('planets_name') }}">Todos los planetas de Star Wars</a>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <a href="{{ url_for('planets_population') }}">Top 10 planetas con mayor población</a>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <a href="{{ url_for('starships_price') }}">Top 10 naves espaciales más caras</a>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <a href="{{ url_for('species_classification') }}">Especies: nombre y clasificación</a>
+            </li>
+          
+        </ul>
+</body>
+</html>
+
+
